@@ -630,11 +630,38 @@ __SYSCALL(__NR_epoll_pwait, sys_epoll_pwait)
 #define __NR_signalfd				282
 __SYSCALL(__NR_signalfd, sys_signalfd)
 #define __NR_timerfd				283
-__SYSCALL(__NR_timerfd, sys_timerfd)
+#define __NR_timerfd_create			283
+__SYSCALL(__NR_timerfd_create, sys_timerfd_create)
 #define __NR_eventfd				284
 __SYSCALL(__NR_eventfd, sys_eventfd)
 #define __NR_fallocate				285
 __SYSCALL(__NR_fallocate, sys_fallocate)
+#define __NR_timerfd_settime			286
+__SYSCALL(__NR_timerfd_settime, sys_timerfd_settime)
+#define __NR_timerfd_gettime			287
+__SYSCALL(__NR_timerfd_gettime, sys_timerfd_gettime)
+#define __NR_accept4				288
+__SYSCALL(__NR_accept4, sys_accept4)
+#define __NR_signalfd4				289
+__SYSCALL(__NR_signalfd4, sys_signalfd4)
+#define __NR_eventfd2				290
+__SYSCALL(__NR_eventfd2, sys_eventfd2)
+#define __NR_epoll_create1			291
+__SYSCALL(__NR_epoll_create1, sys_epoll_create1)
+#define __NR_dup3				292
+__SYSCALL(__NR_dup3, sys_dup3)
+#define __NR_pipe2				293
+__SYSCALL(__NR_pipe2, sys_pipe2)
+#define __NR_inotify_init1			294
+__SYSCALL(__NR_inotify_init1, sys_inotify_init1)
+#define __NR_preadv				295
+__SYSCALL(__NR_preadv, sys_preadv)
+#define __NR_pwritev				296
+__SYSCALL(__NR_pwritev, sys_pwritev)
+#define __NR_rt_tgsigqueueinfo			297
+__SYSCALL(__NR_rt_tgsigqueueinfo, sys_rt_tgsigqueueinfo)
+#define __NR_perf_event_open			298
+__SYSCALL(__NR_perf_event_open, sys_perf_event_open)
 
 #ifndef __NO_STUBS
 #define __ARCH_WANT_OLD_READDIR
